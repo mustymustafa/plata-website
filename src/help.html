@@ -40,37 +40,57 @@ img {margin-bottom: -8px;}
     </a>
     <!-- Right-sided navbar links -->
     <div class="w3-left w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-text-white w3-button"><i class="fa fa-box"></i> Dispatch</a>
-      <a href="deliver.html" class="w3-bar-item w3-text-white w3-button"><i class="fa fa-motorcycle"></i> Deliver and Earn</a>
-      <a href="help.html" class="w3-bar-item w3-text-white w3-button"><i class="fa fa-envelope"></i> Contact us</a>
+        <a href="index.html" class="w3-bar-item w3-text-white w3-button"></i> Dispatch</a>
+        <a href="deliver.html" class="w3-bar-item w3-text-white w3-button"></i> Deliver and Earn</a>
+        <a href="help.html" class="w3-bar-item w3-text-white w3-button"></i> Contact us</a>
+        <a href="about.html" class="w3-bar-item w3-text-white w3-button"></i> About us</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars w3-white"></i>
+      </a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars w3-white"></i>
-    </a>
   </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="index.html" class="w3-bar-item w3-text-black w3-button">Dispatch</a>
-    <a href="deliver.html" class="w3-bar-item w3-text-black w3-button"><i class="fa fa-user"></i> Deliver and Earn</a>
-<a href="help.html" class="w3-bar-item w3-text-black w3-button"><i class="fa fa-envelope"></i> Help</a>
-</nav>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <a href="index.html" class="w3-bar-item w3-text-black w3-button">Dispatch</a>
+      <a href="deliver.html" class="w3-bar-item w3-text-black w3-button"><i class="fa fa-user"></i> Deliver and Earn</a>
+  <a href="help.html" class="w3-bar-item w3-text-black w3-button"></i> Contact us</a>
+  <a href="about.html" class="w3-bar-item w3-text-white w3-button"></i> About us</a>
+  </nav>
 
 <!-- Header with Slideshow -->
-<header class="w3-display-container w3-center">
-    <div class="w3-animate-opacity">
-        <img class="w3-image" src="assets/images/IMG_1520.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
-        
-        <div class="w3-display-right w3-padding w3-hide-small" style="width:35%; margin-top: -20px; height: 700px;">
-          <div class="w3-white w3-hover-opacity-off  w3-xlarge" style="height: 490px;">
-            <p><b><h2 class="w3-xxlarge   w3-left w3-text-black" style="padding: 30px 5px; font-weight: bold;">We are here to help you anytime, anyday!</h2></b> </p>
-            <p><button style="background-color: #0b2e72; width: 400px; margin-top: 20px;" class="w3-button w3-round-large w3-center w3-text-white" onclick="document.getElementById('download').style.display='block'">Download <i class="fab fa-google-play w3-text-white"></i>  <i class="fab fa-app-store-ios w3-text-white"></i></button></p>
-          </div>
+<header class="w3-display-container w3-center w3-padding-bottom">
+    <div class="w3-row">
+
+        <div class="w3-half">
+            <img class="w3-image" src="assets/images/IMG_1520.jpg" alt="Image 2" style="min-width:500px" width="1500" height="800">
         </div>
+
+        <div class="w3-container w3-half" style="height: 456px;">
+            <p><b><h2 class="w3-xxlarge   w3-left w3-text-black" style="padding: 30px 5px; font-weight: bold;">We are here to help you anytime, anyday!</h2></b> </p>
+
+      <p><i style="color: #0b2e72" class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>+2349038826995</p>
+      <p><i style="color: #0b2e72" class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>+2349038826995</p>
+      
+      <div class="w3-xxxlarge">
+          <i style="color: #0b2e72;" class="fab  fa-facebook w3-hover-opacity"></i>
+          <i style="color: #0b2e72;" class="fab  fa-instagram w3-hover-opacity"></i>
+          <i style="color: #0b2e72;" class="fab  fa-twitter w3-hover-opacity"></i>
+          <i style="color: #0b2e72;" class="fab  fa-linkedin w3-hover-opacity"></i>
+        
+         
+        </div>
+        </div>
+
+        
+        
       </div>
+
+
+  
   
       
 
@@ -84,70 +104,9 @@ img {margin-bottom: -8px;}
   
 </header>
 
-<div id="download" class="w3-modal w3-animate-opacity">
-    <div class="w3-modal-content" style="padding:32px">
-      <div class="w3-container w3-white">
-        <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
-        <h2 class="w3-wide w3-center">DOWNLOAD</h2>
-        <p class="w3-center">Download the app in App Store or Google Play.</p>
-        <p>
-            <div class="w3-bar-item w3-center w3-large">
-                <a href="#home" class="w3-bar-item w3-center w3-large">
-                    <img class="w3-image w3-round-large" src="assets/images/ios.png" height="200" width="200" >
-                </a>
-            </div>
-            </p>
-            
-            <p>
-            <div class="w3-bar-item w3-center w3-large">
-                <a href="#home" class="w3-bar-item w3-center w3-large">
-                    <img class="w3-image w3-round-large" src="assets/images/android.png" height="200" width="200" >
-                </a>
-            </div>
-          </p>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="w3-container w3-hide-large w3-hide-medium" style="padding:20px 20px; background-color: #0b2e72;">
-      <div class="w3-bar-item w3-center w3-xxlarge">
-          <p> <h1 class="w3-xxlarge w3-text-white" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" >We are here to help you anytime, anyday :)</h1></p>
-      </div>
-        
-      
-      
-    </div>
 
 
 
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:80px 16px" id="contact">
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:20px">
-   
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border w3-round-large" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border w3-round-large" type="email" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border w3-round-large" type="number" placeholder="Phone" required name="Phone"></p>
-      <p><input class="w3-input w3-border w3-round-large" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-text-white" type="submit" style="background-color: #0b2e72">
-          <i class="fa fa-paper-plane w3-text-white"></i> SEND MESSAGE
-        </button>
-      </p>
-      <br>
-      <p><i style="color: #0b2e72" class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Abuja, Nigeria</p>
-      <p><i style="color: #0b2e72" class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +2349038826995</p>
-    
-    </form>
-  
-  </div>
-</div>
-
-<!-- Footer -->
 <footer class="w3-center w3-container  w3-padding-64" style="background-color: #0b2e72;">
 
     <div class="w3-row">
@@ -235,6 +194,15 @@ img {margin-bottom: -8px;}
   
   
   </footer>
+   
+
+
+
+
+<!-- Contact Section -->
+
+
+
    
  
 <script>
