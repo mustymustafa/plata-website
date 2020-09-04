@@ -6,12 +6,18 @@
 <link rel="stylesheet" href="w3/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
+<link href="fontawesome-free-5.14.0-web/js/all.js" rel="stylesheet">
+
+
 <style>
 body,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body {font-size: 16px;}
 img {margin-bottom: -8px;}
 .mySlides {display: none;}
+
+.mySlide {display: none;}
 
 
 .w3-bar .w3-button {
@@ -21,7 +27,7 @@ img {margin-bottom: -8px;}
 #myNavbar {
     background-color: #0b2e72;
 }
-.mySlides {display: none;}
+
 </style>
 
 <body class="w3-content" style="max-width:1500px;">
@@ -30,14 +36,13 @@ img {margin-bottom: -8px;}
 <div>
   <div class="w3-bar w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item">
-        <img class="w3-image" src="assets/images/pb.png" height="100" width="100" >
+      <img class="w3-image" style="margin-left: -15px;"  width="200" src="assets/images/icon.png" >
     </a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-text-white w3-button">Dispatch</a>
-      <a href="deliver.html" class="w3-bar-item w3-text-white w3-button"><i class="fa fa-user"></i> Deliver and Earn</a>
-
-      <a href="#contact" class="w3-bar-item w3-text-white w3-button"><i class="fa fa-envelope"></i> Help</a>
+    <div class="w3-left w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-text-white w3-button"><i class="fa fa-box"></i> Dispatch</a>
+      <a href="deliver.html" class="w3-bar-item w3-text-white w3-button"><i class="fa fa-motorcycle"></i> Deliver and Earn</a>
+      <a href="help.html" class="w3-bar-item w3-text-white w3-button"><i class="fa fa-envelope"></i> Contact us</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -51,93 +56,69 @@ img {margin-bottom: -8px;}
 <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="index.html" class="w3-bar-item w3-text-black w3-button">Dispatch</a>
     <a href="deliver.html" class="w3-bar-item w3-text-black w3-button"><i class="fa fa-user"></i> Deliver and Earn</a>
-    <a href="#contact" class="w3-bar-item w3-text-black w3-button"><i class="fa fa-envelope"></i> Help</a>
+<a href="help.html" class="w3-bar-item w3-text-black w3-button"><i class="fa fa-envelope"></i> Help</a>
 </nav>
 
 <!-- Header with Slideshow -->
 <header class="w3-display-container w3-center">
-  <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
-  <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="assets/images/william-iven-SpVHcbuKi6E-unsplash.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
-    
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%; height: 70%;">
-      <div class="w3-white w3-hover-opacity-off w3-padding-large w3-round-large">
-    
-        <p> <h1 class="w3-xxlarge w3-text-black" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">We are here to help you anytime, anyday :) </h1></p>
+    <div class="w3-animate-opacity">
+        <img class="w3-image" src="assets/images/IMG_1520.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
+        
+        <div class="w3-display-right w3-padding w3-hide-small" style="width:35%; margin-top: -20px; height: 700px;">
+          <div class="w3-white w3-hover-opacity-off  w3-xlarge" style="height: 490px;">
+            <p><b><h2 class="w3-xxlarge   w3-left w3-text-black" style="padding: 30px 5px; font-weight: bold;">We are here to help you anytime, anyday!</h2></b> </p>
+            <p><button style="background-color: #0b2e72; width: 400px; margin-top: 20px;" class="w3-button w3-round-large w3-center w3-text-white" onclick="document.getElementById('download').style.display='block'">Download <i class="fab fa-google-play w3-text-white"></i>  <i class="fab fa-app-store-ios w3-text-white"></i></button></p>
+          </div>
+        </div>
       </div>
-    </div>
-
   
       
 
-  </div>
-
-  <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="assets/images/austin-distel-WO23uj_8EUU-unsplash.jpg" alt="Image 3" style="min-width:500px" width="1500" height="1000">
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-      <div class="w3-white w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge">Smart Design</h1>
-        <hr class="w3-opacity">
-        <p>Customize photos as you go</p>
-        <p><button style="background-color: #0b2e72"  class="w3-button w3-block w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
-        <p><button style="background-color: #0b2e72" class="w3-button w3-block w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
-        
-      </div>
-    </div>
+ 
 
 
-    <div class="w3-display-left w3-padding w3-hide-large w3-hide-medium" style="width:35%">
-        <div class="w3-white w3-top w3-opacity w3-hover-opacity-off w3-padding-xlarge w3-round-small">
-          <h3 class="w3-small w3-text-red"><b>CLICK!</b> Fast and Easy</h3>
-          <hr class="w3-opacity">
-          <p>Choose from thousands of features</p>
-       
-        </div>
-      </div>
 
-  </div>
-
-  <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="assets/images/coinview-app-h7a6g0ua6LM-unsplash.jpg" alt="Image 1" style="min-width:500px" width="1500" height="1000">
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-      <div class="w3-white w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge">Take photos with our app</h1>
-        <hr class="w3-opacity">
-        <p>Super simple installment: free of charge</p>
-        <p><button style="background-color: #0b2e72"  class="w3-button w3-block  w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
- <p><button style="background-color: #0b2e72" class="w3-button w3-block w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
- <p><button style="background-color: #0b2e72" class="w3-button w3-block w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
-        
-      </div>
-    </div>
-
-    <div class="w3-display-left w3-padding w3-hide-large w3-hide-medium" style="width:35%">
-        <div class="w3-white w3-top w3-opacity w3-hover-opacity-off w3-padding-xlarge w3-round-small">
-          <h3 class="w3-small w3-text-red"><b>CLICK!</b> Fast and Easy</h3>
-          <hr class="w3-opacity">
-          <p>Choose from thousands of features</p>
-       
-        </div>
-      </div>
-  </div>
+ 
  
 
   
 </header>
 
+<div id="download" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content" style="padding:32px">
+      <div class="w3-container w3-white">
+        <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+        <h2 class="w3-wide w3-center">DOWNLOAD</h2>
+        <p class="w3-center">Download the app in App Store or Google Play.</p>
+        <p>
+            <div class="w3-bar-item w3-center w3-large">
+                <a href="#home" class="w3-bar-item w3-center w3-large">
+                    <img class="w3-image w3-round-large" src="assets/images/ios.png" height="200" width="200" >
+                </a>
+            </div>
+            </p>
+            
+            <p>
+            <div class="w3-bar-item w3-center w3-large">
+                <a href="#home" class="w3-bar-item w3-center w3-large">
+                    <img class="w3-image w3-round-large" src="assets/images/android.png" height="200" width="200" >
+                </a>
+            </div>
+          </p>
+
+      </div>
+    </div>
+  </div>
 
 
-
-  <div class="w3-container  w3-hide-large w3-hide-medium" style="padding:20px 20px;">
+  <div class="w3-container w3-hide-large w3-hide-medium" style="padding:20px 20px; background-color: #0b2e72;">
       <div class="w3-bar-item w3-center w3-xxlarge">
-          <p> <h1 class="w3-xxlarge w3-text-black" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" >We are here to help you anytime, anyday :)</h1></p>
+          <p> <h1 class="w3-xxlarge w3-text-white" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" >We are here to help you anytime, anyday :)</h1></p>
       </div>
         
       
       
     </div>
-
-
 
 
 
@@ -167,43 +148,94 @@ img {margin-bottom: -8px;}
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-padding-64" style="background-color: #0b2e72; height: 500px;">
-<div class="w3-container w3-left">
-    <a href="#home" class="w3-bar-item">
-        <img class="w3-image" src="assets/images/pb.png" height="100" width="100" >
-    </a>
-    <div class="w3-bar-item w3-center w3-small">
-        <a href="#home" class="w3-bar-item w3-center w3-small">
-            <img class="w3-image w3-round-large" src="assets/images/ios.png" height="200" width="200" >
-        </a>
-    </div>
-    
-    <div class="w3-bar-item w3-center w3-small"  style="padding: 20px;">
-        <a href="#home" class="w3-bar-item w3-center w3-small">
-            <img class="w3-image w3-round-large" src="assets/images/android.png" height="200" width="200" >
-        </a>
-    </div>
+<footer class="w3-center w3-container  w3-padding-64" style="background-color: #0b2e72;">
 
-    <div class="w3-xlarge w3-section">
-        <i class="fa w3-text-white fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa w3-text-white fa-instagram w3-hover-opacity"></i>
-        <i class="fa w3-text-white fa-snapchat w3-hover-opacity"></i>
-        <i class="fa w3-text-white fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa w3-text-white fa-twitter w3-hover-opacity"></i>
-        <i class="fa w3-text-white fa-linkedin w3-hover-opacity"></i>
+    <div class="w3-row">
+      
+      <div class="w3-third w3-container">
+        <a href="#home">
+            <img class="w3-image" width="200" style="margin-top: -25px;" src="assets/images/icon.png">
+        </a>
+    
+        <p>
+        <div class="w3-bar-item w3-center w3-large">
+            <a href="#home" class="w3-bar-item w3-center w3-large">
+                <img class="w3-image w3-round-large" src="assets/images/ios.png" height="200" width="200" >
+            </a>
+        </div>
+        </p>
+        
+        <p>
+        <div class="w3-bar-item w3-center w3-large">
+            <a href="#home" class="w3-bar-item w3-center w3-large">
+                <img class="w3-image w3-round-large" src="assets/images/android.png" height="200" width="200" >
+            </a>
+        </div>
+      </p>
+    
+        <div class="w3-xxlarge w3-center">
+            <i class="fab w3-text-white fa-facebook w3-hover-opacity"></i>
+            <i class="fab w3-text-white fa-instagram w3-hover-opacity"></i>
+            <i class="fab w3-text-white fa-twitter w3-hover-opacity"></i>
+            <i class="fab w3-text-white fa-linkedin w3-hover-opacity"></i>
+          
+           
+          </div>
+    
+    
+         
+       
+    
+         
+     
+    </div>
+      
+    
+    
+    <div class="w3-third w3-container">
+      
+      <div class="w3-center">
+        <h3 class="w3-text-white"><b>Products</b></h3>
+        <p> <a href="index.html" class="w3-bar-item w3-text-white w3-button">Dispatch Hailing</a></p>
       
       </div>
-
- 
-</div>
+    
+       
+    
+    </div>
+    
+    
+    <div class="w3-third w3-container" >
+      
+      <div class="w3-center">
+        <h3 class="w3-text-white"><b>Company</b></h3>
+        <p> <a href="about.html" class="w3-bar-item w3-text-white w3-button">About us</a></p>
+        <p> <a href="help.html" class="w3-bar-item w3-text-white w3-button">Contact us</a></p>
+        <p> <i class="fas fa-map-marker-alt w3-text-white" style="font-size: 20px;"></i><br><h4 class="w3-text-white">Abuja</h4></p>
+       
+      
+      </div>
+     
+      <div class="w3-section">
+        <a href="privacy.html" class="w3-bar-item w3-text-white w3-button">Privacy</a>
+        <a href="index.html" class="w3-bar-item w3-text-white w3-button">Terms</a>
+        <p>
+            <h5 style="margin-left: 30px; margin-top: 60px;" class="w3-text-white">© <script>document.write(new Date().getFullYear())</script> Platabox Technologies Ltd</h5>  
+          </p>
+        </div>
+    
+    
+       
+     
+    
+       
+    
+    </div>
+    </div>
   
-<div class="w3-container w3-center">
-    <p>
-        <h5 class="w3-text-white">© 2020 Platabox Technologies Ltd <br/> <a href="#home" class="w3-bar-item">Privacy Policy</a></h5>  
-      </p>
-</div>
-
-</footer>
+  
+  </footer>
+   
  
 <script>
 // Modal Image Gallery
