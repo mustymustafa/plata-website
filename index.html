@@ -1,477 +1,232 @@
 <!DOCTYPE html>
-<html>
-  <title>Platabox</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-<link rel='icon' href='assets/images/ic.ico' type='image/x-icon'/>
-<link rel="stylesheet" href="w3/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
-<link href="fontawesome-free-5.14.0-web/js/all.js" rel="stylesheet">
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Platabox</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Platabox" />
 
-<style>
-body,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="images/t.jpg" />
 
-body {font-size: 16px;}
-img {margin-bottom: -8px;}
-.mySlides {display: none;}
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 
+    <!-- Material Icon -->
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
 
-.w3-bar .w3-button {
-  padding: 16px;
-}
+    <!-- tinyslider -->
+    <link rel="stylesheet" href="css/tiny-slider.css">
 
-#myNavbar {
-    background-color: #0b2e72;
-}
-.mySlides {display: none;}
-</style>
+    <!-- Custom  sCss -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
 
-<body class="w3-content" style="max-width:1500px;">
+<body data-spy="scroll" data-target=".navbar" data-offset="58">
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top sticky" id="navbar">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="logo text-uppercase" href="index.html">
+                <img src="images/icon.png" alt="" class="logo-light" height="35" />
+                <img src="images/icon.png" alt="" class="logo-dark" height="35" />
+            </a>
 
-<!-- Navbar (sit on top) -->
-<div>
-  <div class="w3-bar w3-card" id="myNavbar">
-    <a href="index.html" class="w3-bar-item">
-      <img class="w3-image" style="margin-left: -15px;"  width="200" src="assets/images/icon.png" >
-    </a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-left w3-hide-small">
-        <a href="index.html" class="w3-bar-item w3-text-white w3-button"></i> Dispatch</a>
-        <a href="deliver.html" class="w3-bar-item w3-text-white w3-button"></i> Deliver and Earn</a>
-        <a href="help.html" class="w3-bar-item w3-text-white w3-button"></i> Contact us</a>
-        <a href="about.html" class="w3-bar-item w3-text-white w3-button"></i> About us</a>
-      </div>
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-  
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars w3-white"></i>
-      </a>
-    </div>
-  </div>
-  
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-      <a href="index.html" class="w3-bar-item w3-text-black w3-button">Dispatch</a>
-      <a href="deliver.html" class="w3-bar-item w3-text-black w3-button">Deliver and Earn</a>
-  <a href="help.html" class="w3-bar-item w3-text-black w3-button"></i> Contact us</a>
-  <a href="about.html" class="w3-bar-item w3-text-black w3-button"></i> About us</a>
-  </nav>
-
-<!-- Header with Slideshow -->
-<header class="w3-display-container w3-center">
-    <div class="mySlides w3-animate-opacity">
-        <img class="w3-image" src="assets/images/IMG_1517.png" alt="Image 2" style="min-width:300px" width="1500" height="1000">
-        
-        <div class="w3-display-left w3-padding w3-hide-small" style="width:35%; margin-top: -20px; height: 700px;">
-          <div class="w3-white w3-hover-opacity-off  w3-xlarge" style="height: 500px;">
-              <p><b><h3 class="w3-xxlarge  w3-wide w3-left w3-text-black" style="padding: 60px 5px; margin-top: 30px; font-weight: bold;">Get an affordable dispatch rider with ease</h3></b> </p>
-            <p><button style="background-color: #0b2e72; width: 400px; margin-top: 20px;" class="w3-button w3-round-large w3-center w3-text-white" onclick="document.getElementById('download').style.display='block'">Download <i class="fab fa-google-play w3-text-white"></i>  <i class="fab fa-app-store-ios w3-text-white"></i></button></p>
-          </div>
-        </div>
-      </div>
-  
-      
-
- 
-
-
-
- 
- 
-
-  
-</header>
-
-<div id="download" class="w3-modal w3-animate-opacity">
-    <div class="w3-modal-content" style="padding:32px">
-      <div class="w3-container w3-white">
-        <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
-        <h2 class="w3-wide w3-center">DOWNLOAD</h2>
-        <p class="w3-center">Download the app in App Store or Google Play.</p>
-        <p>
-            <div class="w3-bar-item w3-center w3-large">
-                <a href="https://apps.apple.com/us/app/id1530910325" class="w3-bar-item w3-center w3-large">
-                    <img class="w3-image w3-round-large" src="assets/images/ios.png" height="200" width="200" >
-                </a>
+            <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center mt-lg-0 mt-2" id="navbar-navlist">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Dispatch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="deliver.html" class="nav-link">Deliver and Earn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="about.html" class="btn btn-info btn-sm navbar-btn my-lg-0 my-2" style="background-color: #0c2f73;">About Us</a>
             </div>
-            </p>
-            
-            <p>
-            <div class="w3-bar-item w3-center w3-large">
-                <a href="https://play.google.com/store/apps/details?id=com.platabox.plataboxandroidandroid" class="w3-bar-item w3-center w3-large">
-                    <img class="w3-image w3-round-large" src="assets/images/android.png" height="200" width="200" >
-                </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero section Start -->
+    <section class="hero-4 position-relative align-items-center justify-content-center d-flex" style="background-image: url(images/img.jpg);" id="home">
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-lg-7 col-md-5">
+                    <div class="hero-4-content mt-md-5">
+                        <h2 class="fw-normal mb-4" style="color: white">Get an affordable dispatch rider <br>with ease</h2>
+                        <a href="#" class="btn btn-info" style="background-color: #0c2f73; border-color: #0c2f73;">Download now <i class="mdi mdi-send font-13 ml-1"></i></a>
+                    </div>
+                </div>
             </div>
-          </p>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="w3-container  w3-hide-large w3-hide-medium" style="padding:20px 20px; background-color: #0b2e72;">
-      <div class="w3-bar-item w3-center w3-xxlarge">
-          <p> <h1 class="w3-xxlarge w3-text-white" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" >Get an Affordable Dispatch Rider with ease</h1></p>
-      </div>
-        
-      
-      
-    </div>
-
-
-<div class="w3-container w3-center" style="padding:100px 70px;">
-
-  <div class="w3-row">
-    <div class="w3-third w3-container w3-center">
-      <img style="margin-left: -30px;" src="assets/images/bike.svg" class="w3-center" height="200"
-      width="250">
-      <div class="w3-container w3-padding-24">
-          <h3><b>Got a package to send?</b></h3>
-          <p>Request for a dispatch rider with ease</p>
+            <!-- end row -->
         </div>
-    </div>
-    <div class="w3-third w3-container w3-center">
-      <img src="assets/images/wallet.svg" class="w3-center"    height="250"
-      width="200">
-      <div class="w3-container" style="margin-top: -25px;">
-          <h3><b>Enjoy Affordable pricing</b></h3>
-          <p>Send out packages quickly without breaking the bank</p>
-        </div>
-    </div>
-    <div class="w3-third w3-container w3-center">
-      <img src="assets/images/mobile.svg" class="w3-center"    height="250"
-      width="200">
-      <div class="w3-container" style="margin-top: -25px;">
-          <h3><b>User friendly App</b></h3>
-          <p>Platabox provides a seamless user experience</p>
-        </div>
-    </div>
-    
-  </div>
-  
-  
-    
-    
-  </div>
+        <!-- end container -->
+    </section>
+    <!-- Hero section End -->
 
+    <!-- Start About -->
+    <section class="section" id="about">
+        <div class="container">
 
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="text-center p-4">
+                        <img src="images/bike.svg" style="height: 200px; margin-bottom: 20px;">
+                        <h5>Got a package to send?</h5>
+                        <p class="text-muted">Request for a dispatch rider with ease</p>
+                    </div>
+                </div>
 
+                <div class="col-lg-4 col-md-4">
+                    <div class="text-center p-4">
+                        <img src="images/wallet.svg" style="height: 200px; margin-bottom: 20px;">
+                        <h5>Enjoy Affordable pricing</h5>
+                        <p class="text-muted">Send out packages quickly without breaking the bank</p>
+                    </div>
+                </div>
 
-<!-- Contact Section -->
-<div class="w3-container w3-center" style="padding:70px 16px; height: 400px; background-color: #0b2e72;" id="contact">
-   
-
-  <div class="w3-container w3-center">
-        <img src="assets/images/rider.png"     height="600"
-        width="289.3">
-
-        <img  class="w3-center" style="margin-left: -268px; margin-top: 45px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" src="assets/images/app.gif"     height="500"
-        width="230">
-       
-      </div>
-
-</div>
-<div class=" w3-hide-small w3-container w3-center w3-white" style="padding:70px 16px; height: 600px;" id="contact">
-    <div class="w3-container w3-left" style="margin-top: -50px;">
-
-      <i class="fas fa-check-circle" style="font-size: 48px; color:green;"></i>
-      
-        <h3><b>Affordable and Reliable</b></h3>
-        <p>You are guaranteed a Reliable and Affordable Service !</p>
-<br>
-<i class="fas fa-route" style="font-size: 48px; color:#0b2e72;"></i>
-        <h3><b>Multi destination </b></h3>
-        <p>Select up to 5 drop-off locations with one Request!</p>
-
-      </div> 
-
-  
-
-      <div class="w3-container w3-right" style="margin-top: -50px;">
-        <i class="fas fa-clock" style="font-size: 48px; color:#0b2e72;"></i>
-          <h3><b>Schedule Pickup </b></h3>
-          <p>schedule your pick-up by selecting your desired pick-up time </p>
-        <br>
-        <img src="assets/images/pay.svg" style="margin-top: -25px;"   height="100"
-        width="300">
-          <h3><b>Pay on Arrival</b></h3>
-          <p>Pay cash or transfer when the rider arrives</p>
-
-        </div> 
-
-       
-
-  
-
-</div>
-
-<div class="w3-hide-large w3-container w3-white" style="padding:70px 16px;" id="contact">
-    
-
-        <div class="w3-hide-large w3-container w3-left" style="margin-top: 250px;">
-          <i class="fas fa-check-circle" style="font-size: 48px; color:green;"></i>
-            <h3><b>Affordable and Reliable</b></h3>
-            <p>You are guaranteed a Reliable and Affordable Service !</p>
-
-            <i class="fas fa-route" style="font-size: 48px; color:#0b2e72;"></i>
-            <h3><b>Multi destination </b></h3>
-            <p>Select up to 5 drop-off locations with one Request!</p>
-            
-          </div> 
-    
-          <div class="w3-hide-large w3- w3-container w3-left" style="margin-top: 20px;">
-            <i class="fas fa-clock" style="font-size: 48px; color:#0b2e72;"></i>
-              <h3><b>Schedule Pickup </b></h3>
-              <p>schedule your pick-up by selecting your desired pick-up time </p>
-    
-              <img src="assets/images/pay.svg" style="margin-left: -85px;"   height="100"
-              width="300">
-              <h3><b>Pay on Arrival</b></h3>
-              <p>Pay cash or transfer when the rider arrives</p>
-            </div> 
-  
-
-</div>
-
-
-
-<div class=" w3-hide-small w3-container w3-black" style="height: 620px;">
-    
-
-        <img class="w3-image w3-center" style="margin-top: -20px;" src="assets/images/app1.png" alt="Image 2">
-        
-        <div class="w3-left w3-padding-32 w3-large w3-hide-small">
-          <p><b><h1 class="w3-xxxlarge w3-center  w3-text-white">Start using Platabox Now!</h1></b> </p>
-    
-          <p> <h1 class="w3-xlarge w3-center  w3-text-white">Download on App Store or Google Play</h1></p>
-    
-          <p>
-              <div class="w3-bar-item w3-center w3-large">
-                  <a href="https://apps.apple.com/us/app/id1530910325" class="w3-bar-item w3-center w3-large">
-                      <img class="w3-image w3-round-large w3-border" src="assets/images/ios.png" height="200" width="200" >
-                  </a>
-              </div>
-              </p>
-              
-              <p>
-              <div class="w3-bar-item w3-center w3-large">
-                  <a href="https://play.google.com/store/apps/details?id=com.platabox.plataboxandroidandroid" class="w3-bar-item w3-center w3-large">
-                      <img class="w3-image w3-border w3-round-large" src="assets/images/android.png" height="200" width="200" >
-                  </a>
-              </div>
-            </p>
-        </div>
-    
-        
-    
-    
-      
-          
-    
-     
-        
-   
-    
-      
-          
-    
-      </div>
-  
-      
-
-      <div class=" w3-hide-large w3-container w3-black" >
-          <div class="w3-left w3-padding-32 w3-large">
-              <p><b><h1 class="w3-xxxlarge w3-center  w3-text-white">Start using Platabox Now!</h1></b> </p>
-        
-              <p> <h1 class="w3-xlarge w3-center  w3-text-white">Download on App Store or Google Play</h1></p>
-        
-              <p>
-                  <div class="w3-bar-item w3-center w3-large">
-                      <a href="https://apps.apple.com/us/app/id1530910325" class="w3-bar-item w3-center w3-large">
-                          <img class="w3-image w3-round-large w3-border" src="assets/images/ios.png" height="200" width="200" >
-                      </a>
-                  </div>
-                  </p>
-                  
-                  <p>
-                  <div class="w3-bar-item w3-center w3-large">
-                      <a href="https://play.google.com/store/apps/details?id=com.platabox.plataboxandroidandroid" class="w3-bar-item w3-center w3-large">
-                          <img class="w3-image w3-border w3-round-large" src="assets/images/android.png" height="200" width="200" >
-                      </a>
-                  </div>
-                </p>
+                <div class="col-lg-4 col-md-4">
+                    <div class="text-center p-4">
+                        <img src="images/mobile.svg" style="height: 200px; margin-bottom: 20px;">
+                        <h5>User friendly App</h5>
+                        <p class="text-muted">Platabox provides a seamless user experience</p>
+                    </div>
+                </div>
             </div>
-      
-            
-          <img class="w3-image" style="margin-top: -20px;" src="assets/images/app1.png" alt="Image 2">
-          
-      
-          
-      
-      
-        
-            
-      
-       
-          
-     
-      
-        
-            
-      
+            <!-- end row -->
         </div>
-    
-        
-      
+        <!-- end container -->
+    </section>
+    <!-- end About -->
 
-     
-        
-      </div> 
+    <!-- Start Features -->
+    <section class="section bg-light" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" align="center">
+                    <img src="images/tick.png" style="height: 80px; margin-bottom: 10px;">
+                    <h3>Affordable and Reliable</h3>
+                    <p>You are guaranteed a Reliable and Affordable Service !</p>
 
-     
+                    <img src="images/destination.png" style="height: 80px; margin-bottom: 10px; margin-top: 50px;">
+                    <h3>Multi destination </h3>
+                    <p>Select up to 5 drop-off locations with one Request!</p>
+                </div>
+                <div class="col-md-4" align="center">
+                    <img src="images/app.gif">
+                </div>
+                <div class="col-md-4" align="center">
+                    <img src="images/time.png" style="height: 80px; margin-bottom: 10px;">
+                    <h3>Schedule Pickup </h3>
+                    <p>Schedule your pick-up by selecting your desired pick-up time </p>
 
-
-</div>
-<!-- Footer -->
-<footer class="w3-center w3-container  w3-padding-64" style="background-color: #0b2e72;">
-
-  <div class="w3-row">
-    
-    <div class="w3-third w3-container">
-      <a href="index.html">
-          <img class="w3-image" width="200" style="margin-top: -25px;" src="assets/images/icon.png">
-      </a>
-  
-      <p>
-      <div class="w3-bar-item w3-center w3-large">
-          <a href="https://apps.apple.com/us/app/id1530910325" class="w3-bar-item w3-center w3-large">
-              <img class="w3-image w3-round-large" src="assets/images/ios.png" height="200" width="200" >
-          </a>
-      </div>
-      </p>
-      
-      <p>
-      <div class="w3-bar-item w3-center w3-large">
-          <a href="https://play.google.com/store/apps/details?id=com.platabox.plataboxandroid" class="w3-bar-item w3-center w3-large">
-              <img class="w3-image w3-round-large" src="assets/images/android.png" height="200" width="200" >
-          </a>
-      </div>
-    </p>
-  
-      <div class="w3-xxlarge w3-center">
-          <a><i class="fab w3-text-white fa-facebook w3-hover-opacity"></i></a>
-          <a href="https://instagram.com/platabox?igshid=1kocu29ydv9qm"><i class="fab w3-text-white fa-instagram w3-hover-opacity"></i></a>
-          <a href="https://mobile.twitter.com/platabox"><i class="fab w3-text-white fa-twitter w3-hover-opacity"></i></a>
-          <i class="fab w3-text-white fa-linkedin w3-hover-opacity"></i>
-        
-         
+                    <img src="images/pay.svg" style="height: 80px; margin-bottom: 10px; margin-top: 50px;">
+                    <h3>Pay on Arrival</h3>
+                    <p>Pay cash or transfer when the rider arrives </p>
+                </div>
+            </div>
         </div>
-  
-  
-       
-     
-  
-       
-   
-  </div>
-    
-  
-  
-  <div class="w3-third w3-container">
-    
-    <div class="w3-center">
-      <h3 class="w3-text-white"><b>Products</b></h3>
-      <p> <a href="index.html" class="w3-bar-item w3-text-white w3-button">Dispatch Hailing</a></p>
-    
-    </div>
-  
-     
-  
-  </div>
-  
-  
-  <div class="w3-third w3-container" >
-    
-    <div class="w3-center">
-      <h3 class="w3-text-white"><b>Company</b></h3>
-      <p> <a href="about.html" class="w3-bar-item w3-text-white w3-button">About us</a></p>
-      <p> <a href="help.html" class="w3-bar-item w3-text-white w3-button">Contact us</a></p>
-      <p> <i class="fas fa-map-marker-alt w3-text-white" style="font-size: 20px;"></i><br><h4 class="w3-text-white">Abuja</h4></p>
-     
-    
-    </div>
-   
-    <div class="w3-section">
-        <a href="privacy.html" style="text-decoration:none" class="w3-bar-item w3-text-white w3-button">Privacy</a>
-        <a href="tnc.pdf" style="text-decoration:none" class="w3-bar-item w3-text-white w3-button">Terms</a>
-        <p>
-            <h5 style="margin-left: 30px; margin-top: 60px;" class="w3-text-white">© <script>document.write(new Date().getFullYear())</script> Platabox Technologies Ltd</h5>  
-          </p>
+
+    </section>
+
+    <!-- start footer -->
+    <footer class="footer text-white-50" style="background-color: #0c2f73; margin-top: -50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="index.html" class="d-block mb-3">
+                        <img src="images/icon.png" alt="" height="40" />
+                    </a>
+                    <p><a href="https://play.google.com/store/apps/details?id=com.platabox.plataboxandroid"><img src="images/android.png" style="border-radius: 7px; height: 40px;"></a></p>
+                    <p><a href="https://apps.apple.com/us/app/platabox/id1530910325"><img src="images/ios.png" style="border-radius: 7px; height: 41px;"></a></p>
+                </div>
+
+                <div class="col-lg-2 col-sm-6">
+                    <div class="mt-4 mt-lg-0">
+                        <h5 class="mb-4 font-18 text-white">Company</h5>
+                        <ul class="list-unstyled footer-list-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="privacy-policy.html">Privacy</a></li>
+                            <li><a href="www.platabox.com/tnc.pdf" target="_blank">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="mt-4 mt-lg-0">
+                        <h5 class="mb-4 font-18 text-white">Products</h5>
+                        <ul class="list-unstyled footer-list-menu">
+                            <li><a href="index.html">Dispatch Hailing</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="mt-4 mt-lg-0">
+                        <h5 class="mb-4 font-18 text-white">Social</h5>
+                        <ul class="list-inline social-icons-list">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://mobile.twitter.com/platabox"><i class="mdi mdi-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://instagram.com/platabox?igshid=1kocu29ydv9qm"><i class="mdi mdi-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="mdi mdi-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
         </div>
-  
-  
-     
-   
-  
-     
-  
-  </div>
-  </div>
+        <!-- end container -->
+    </footer>
+    <!-- end footer -->
+
+    <!-- Start footer-alt -->
+    <section class="footer-alt py-3" style="background-color: #08193a;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center text-white-50">
+                        <p class="mb-0">© 2021 Platabox Technologies Ltd</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end footer-alt -->
+
+    <!-- Javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- unicons -->
+    <script src="https://unicons.iconscout.com/release/v2.1.11/script/monochrome/bundle.js"></script>
+
+    <!-- testi-slider -->
+    <script src="js/tiny-slider.js"></script>
 
 
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-
-
-// Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-
-</script>
-
+    <!-- app js -->
+    <script src="js/app.js"></script>
 </body>
+
 </html>
